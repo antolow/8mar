@@ -11,6 +11,9 @@ body {
     min-height: 100%;
     overflow: hidden;
     background: url(../jpg/cveti.jpg) no-repeat center/cover;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -41,12 +44,17 @@ img {
 
 }
 
+.card__page-outside {
+    background: url(../jpg/kitten.jpg) no-repeat center/cover;
+}
+
 .card__page-front {
-    background-color: aquamarine;
+    background-color: rgb(246, 251, 217);
     z-index: 10;
     transition: transform 1s;
     transform-origin: 0 50% 0;
     transform-style: preserve-3d;
+    border:  1px solid black;
 }
 
 .card.open .card__page-front {
@@ -63,7 +71,16 @@ img {
     backface-visibility: hidden;
 }
 
+.card__page-bottom {
+    text-align: center;
+    background-color: rgb(243, 247, 222);
+    border:  1px solid black;
+    font-family: Montserrat;
+    font-size: 20px;
+
+}
+
 .card__page-inside {
     transform: rotateY(-180deg);
-    background-color: #fc4949;
+    background: url(../jpg/8.png) no-repeat center/contain;
 }
